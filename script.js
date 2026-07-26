@@ -10,9 +10,6 @@ const volumeEl = document.getElementById("volume-el");
 const weightEl = document.getElementById("weight-el");
 const resetBtn = document.getElementById("reset-btn");
 
-inputEl.addEventListener("input", () => {
-    inputEl.size = Math.max(inputEl.value.length, 1);
-});
 
 resetBtn.addEventListener("click", function(){
     inputEl.value = " "
