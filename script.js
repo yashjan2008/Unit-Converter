@@ -12,7 +12,7 @@ const resetBtn = document.getElementById("reset-btn");
 
 
 resetBtn.addEventListener("click", function(){
-    inputEl.value = " "
+    inputEl.value = " ";
 });
 
 btn.addEventListener("click", function(){
@@ -24,10 +24,12 @@ btn.addEventListener("click", function(){
         let weightResult = inputEl * 2.204;
         weightEl.textContent = weightResult;
     }else{
-        lengthEl.textContent = "sorry!! Please enter numeric value";
+        alert("Please enter a numeric value!");
+        inputEl.value = " ";
+        /*lengthEl.textContent = "sorry!! Please enter numeric value";
         volumeEl.textContent = "sorry!! Please enter numeric value";
         weightEl.textContent = "sorry!! Please enter numeric value";
-        console.log("Sorry!!")
+        console.log("Sorry!!")*/
     };
     
 });
