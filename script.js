@@ -13,6 +13,9 @@ const resetBtn = document.getElementById("reset-btn");
 
 resetBtn.addEventListener("click", function(){
     inputEl.value = " ";
+    lengthEl.textContent = " ";
+    volumeEl.textContent = " ";
+    weightEl.textContent = " ";
 });
 
 btn.addEventListener("click", function(){
@@ -27,9 +30,7 @@ btn.addEventListener("click", function(){
     }else{
         alert("Please enter a numeric value!");
         inputEl.value = " ";
-        /*lengthEl.textContent = "sorry!! Please enter numeric value";
-        volumeEl.textContent = "sorry!! Please enter numeric value";
-        weightEl.textContent = "sorry!! Please enter numeric value";
+        /*
         console.log("Sorry!!")*/
     };
     
