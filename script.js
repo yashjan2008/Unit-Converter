@@ -16,12 +16,13 @@ resetBtn.addEventListener("click", function(){
 });
 
 btn.addEventListener("click", function(){
-    if (inputEl = Number(inputEl.value)){
-        let lengthResult = inputEl * 3.218;
+    let inputValue = Number(inputEl.value);
+    if (!isNaN(inputValue)){
+        let lengthResult = inputEl.value * 3.218;
         lengthEl.textContent = lengthResult;
-        let volumeResult = inputEl * 0.264;
+        let volumeResult = inputEl.value * 0.264;
         volumeEl.textContent = volumeResult;
-        let weightResult = inputEl * 2.204;
+        let weightResult = inputEl.value * 2.204;
         weightEl.textContent = weightResult;
     }else{
         alert("Please enter a numeric value!");
