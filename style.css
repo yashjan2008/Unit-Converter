@@ -15,7 +15,7 @@ body{
     height: 650px;
     width: 400px;
     border-radius: 20px;
-    background: rgb(68, 0, 255);
+    background: rgb(0, 115, 255);
     
 }
 
@@ -31,7 +31,7 @@ body{
     padding-right: 10px;
     padding-bottom: 5px;
     padding-top: 5px;
-    background: rgb(68, 0, 255);
+    background:  rgb(0, 115, 255);
     border: 3px solid white;
     border-radius: 20px;
 }
@@ -39,7 +39,7 @@ body{
 #convert-btn{
     padding: 10px;
     font-size: 20px;
-    color: rgb(68, 0, 255);
+    color:  rgb(0, 115, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin: 20px;
@@ -51,7 +51,7 @@ body{
 #reset-btn{
     padding: 10px;
     font-size: 20px;
-    color: rgb(68, 0, 255);
+    color:  rgb(0, 115, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin: 2px;
