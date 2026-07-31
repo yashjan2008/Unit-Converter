@@ -43,16 +43,6 @@ btn.addEventListener("click", function(){
 const popup = document.getElementById("popup");
 const continueBtn = document.getElementById("continue-btn");
 
-// btn.addEventListener("click", function(){
-//     let input = inputEl.value.trim();
-//     if (input === " " || isNaN(input)){
-//         popup.style.display = "flex";
-//         return;
-//     }
-//     let inputNum = Number(input);
-//     //  conversion code...
-
-// });
 
 continueBtn.addEventListener("click", function(){
     popup.style.display = "none";
