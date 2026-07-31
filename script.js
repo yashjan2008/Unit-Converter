@@ -21,19 +21,18 @@ resetBtn.addEventListener("click", function(){
 btn.addEventListener("click", function(){
     let inputValue = Number(inputEl.value);
     if (!isNaN(inputValue)){
-        let meterResult = (inputEl.value * 3.218).toFixed(2);
-        let feetResult = (inputEl.value / 3.218).toFixed(2);
-        lengthEl.textContent = `${inputValue} meters = ${meterResult} feet | ${inputValue} feets = ${feetResult}`;
-        let literResult = (inputEl.value * 0.264).toFixed(2);
-        let gallonResult = (inputEl.value / 0.264).toFixed(2);
-        volumeEl.textContent = `${inputValue} liters = ${literResult} gallons | ${inputValue} gallons = ${gallonResult}`;
-        let weightResult = (inputEl.value * 2.204).toFixed(2);
-        weightEl.textContent = `${inputValue} kilograms = ${weightResult} pounds`;
+        let meterResult = (inputEl.value * 3.218).toFixed(3);
+        let feetResult = (inputEl.value / 3.218).toFixed(3);
+        lengthEl.textContent = `${inputValue} meters = ${meterResult} feet | ${inputValue} feets = ${feetResult} meters`;
+        let literResult = (inputEl.value * 0.264).toFixed(3);
+        let gallonResult = (inputEl.value / 0.264).toFixed(3);
+        volumeEl.textContent = `${inputValue} liters = ${literResult} gallons | ${inputValue} gallons = ${gallonResult} liters`;
+        let kiloResult = (inputEl.value * 2.204).toFixed(3);
+        let poundResult = (inputEl.value / 2.204).toFixed(3);
+        weightEl.textContent = `${inputValue} kilos = ${kiloResult} pounds | ${inputValue} pounds = ${poundResult} kilos`;
     }else{
         alert("Please enter a numeric value!");
         inputEl.value = " ";
-        /*
-        console.log("Sorry!!")*/
     };
     
 });
