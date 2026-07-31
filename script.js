@@ -19,6 +19,12 @@ resetBtn.addEventListener("click", function(){
 });
 
 btn.addEventListener("click", function(){
+    let input = inputEl.value.trim();
+    if (input === " " || isNaN(input)){
+        popup.style.display = "flex";
+        return;
+    }
+    //  conversion code...
     let inputValue = Number(inputEl.value);
     if (!isNaN(inputValue)){
         let meterResult = (inputEl.value * 3.218).toFixed(3);
@@ -30,9 +36,26 @@ btn.addEventListener("click", function(){
         let kiloResult = (inputEl.value * 2.204).toFixed(3);
         let poundResult = (inputEl.value / 2.204).toFixed(3);
         weightEl.textContent = `${inputValue} kilos = ${kiloResult} pounds | ${inputValue} pounds = ${poundResult} kilos`;
-    }else{
-        alert("Please enter a numeric value!");
-        inputEl.value = " ";
-    };
-    
+    }
+});
+
+
+const popup = document.getElementById("popup");
+const continueBtn = document.getElementById("continue-btn");
+
+// btn.addEventListener("click", function(){
+//     let input = inputEl.value.trim();
+//     if (input === " " || isNaN(input)){
+//         popup.style.display = "flex";
+//         return;
+//     }
+//     let inputNum = Number(input);
+//     //  conversion code...
+
+// });
+
+continueBtn.addEventListener("click", function(){
+    popup.style.display = "none";
+    inputEl.value = " ";
+    inputEl.focus();
 });
