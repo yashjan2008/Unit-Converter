@@ -1,7 +1,7 @@
 body{
+    align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -12,8 +12,9 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     border: 3px solid white;
-    height: 650px;
-    width: 400px;
+    height: 670px;
+    width: 500px;
+    padding: 15px;
     border-radius: 20px;
     background: rgb(0, 115, 255);
     
@@ -65,7 +66,31 @@ button:active{
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 1px;
+}
+
+.length-el{
+    margin-top: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 100px;
+
+}
+
+.volume-el{
+    margin-top: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 100px;
+
+}
+
+.weight-el{
+    margin-top: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 100px;
+
 }
